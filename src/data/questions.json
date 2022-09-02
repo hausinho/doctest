@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "question": "What is your favorite car?",
+      "type": "simple",
+      "choices": [
+        { "id": 0, "text": "Audi" },
+        { "id": 1, "text": "BMW" },
+        { "id": 2, "text": "Mercedes" },
+        { "id": 3, "text": "Peogeot" },
+        { "id": 4, "text": "Fiat" },
+        { "id": 5, "text": "Skoda" },
+        { "id": 6, "text": "Porsche" }
+      ]
+    },
+    {
+      "question": "Which programming languages do you like?",
+      "type": "multiple",
+      "choices": [
+        { "id": 0, "text": "Javascript" },
+        { "id": 1, "text": "PHP" },
+        { "id": 2, "text": "C++" },
+        { "id": 3, "text": ".NET" },
+        { "id": 4, "text": "Java" },
+        { "id": 5, "text": "Python" }
+      ]
+    },
+    {
+      "question": "What is your favorite character?",
+      "type": "simple",
+      "choices": [
+        { "id": 0, "text": "Batman" },
+        { "id": 1, "text": "Hulk" },
+        { "id": 2, "text": "Spider-Man" },
+        { "id": 3, "text": "Wolverine" }
+      ]
+    }
+  ]
+}

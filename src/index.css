@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans");
+
+@layer utilities {
+  .clip-radio {
+    clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+label:hover input {
+  @apply cursor-pointer;
+}
+
+input[type="radio"] {
+  @apply border-black border bg-white appearance-none place-content-center flex;
+}
+
+input[type="radio"]::before {
+  content: "";
+  @apply transform scale-0 origin-bottom-left bg-white w-radioWidth h-radioHeight clip-radio relative top-0.5;
+}
+
+input[type="radio"]:checked::before {
+  @apply transform scale-100;
+}
+input[type="radio"]:checked {
+  @apply border-2 border-buttonBlue bg-buttonBlue;
+}
+
+input[type="checkbox"]:checked {
+  @apply bg-buttonBlue;
 }
